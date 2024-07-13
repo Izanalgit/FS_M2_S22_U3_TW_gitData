@@ -7,7 +7,7 @@ export function User() {
     return (
         <>
             {user.name && 
-                <>
+                <div className='userCard'>
                     <img src={user.image} alt="avatar"/>
                     <h2>Cuenta: {user.name}</h2>
                     <ul>
@@ -17,12 +17,12 @@ export function User() {
                         </li>
                         <li>Seguidores : {user.followers}</li>
                         <li>Repositorios
-                            <ul>
+                            <ul className='reposList'>
                                 {user.repos.map((repo , indx)=><li key={indx}>{repo}</li>)}
                             </ul>
                         </li>
                     </ul>
-                </>
+                </div>
             }
         </>
     );

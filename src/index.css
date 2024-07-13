@@ -5,12 +5,15 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  justify-content: center;
+  color: #070b55;
+  font-size: 20px;
 }
 
 a {
@@ -26,8 +29,10 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  max-width: 600px;
+  align-items: center;
+  background-color: url('https://i.redd.it/5pr2d6fopii31.jpg');
 }
 
 h1 {
@@ -37,14 +42,15 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid chocolate;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  cursor: pointer;
+  cursor: cell;
   transition: border-color 0.25s;
+  margin-left: 3px;
 }
 button:hover {
   border-color: #646cff;
@@ -66,3 +72,18 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.userCard img{
+  max-width: 30%;
+  }
+
+  .reposList{
+   list-style: none;
+   overflow-x: auto;
+
+   height: 10em;
+   margin-top: 5%;
+
+   border: 1px solid black;
+   border-radius: .5em;
+  }
